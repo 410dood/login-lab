@@ -27,6 +27,10 @@ app.get('/signup', function (req, res) {
   res.render('signup');
 });
 
+app.get('/home', function (req, res) {
+	res.render('home');
+});
+
 
 //going to get the data from the signup form, hash it, and store in the database
 app.post("/signup", function(req, res){
